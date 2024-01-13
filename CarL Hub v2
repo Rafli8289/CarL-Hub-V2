@@ -1,0 +1,56 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "CarL Hub By XymmxZ", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Combat"
+})
+OrionLib:MakeNotification({
+	Name = "Blade Ball",
+	Content = "Blade Ball Script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddToggle({
+	Name = "Auto Parry V1",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/sirapobsriumang/Auto-Parry/main/Real"))()
+	end    
+})
+Tab:AddToggle({
+	Name = "Auto Parry V2",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://pastebin.com/raw/EWZ1jeuS"))()
+	end    
+})
+Tab:AddToggle({
+	Name = "Auto Parry V3",
+	Default = false,
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ForYourHead/AutoParry/main/AutoParryNoGui"))()
+	end    
+})
+Tab:AddButton({
+	Name = "Manual Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/ForYourHead/ManualSpam/main/R4mpageManualSpam"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Auto Detect Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/AutoDetectV4/main/MainBalls"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Hold Block To Spam",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/HoldToSpamV4/main/Main"))()
+  	end    
+})
